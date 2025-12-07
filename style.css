@@ -22,3 +22,45 @@
 .menu a:hover {
   color: #00e0ff;
 }
+
+
+      body {
+        font-family: Arial, sans-serif;
+        background: #f0f8ff;
+        margin: 0;
+        padding: 0;
+        text-align: center;
+      }
+
+      header {
+        background: #3aa6ff;
+        color: white;
+        padding: 20px;
+        font-size: 28px;
+        font-weight: bold;
+      }
+
+      #contenido {
+        padding: 30px;
+      }
+
+      button {
+        padding: 12px 24px;
+        font-size: 18px;
+        border: none;
+        border-radius: 10px;
+        background: #3aa6ff;
+        color: white;
+        cursor: pointer;
+      }
+
+      button:hover {
+        background: #1e8be6;
+      }
+
+      #mensajeInteractivo {
+        margin-top: 20px;
+        font-size: 22px;
+        color: #333;
+      }
+   
