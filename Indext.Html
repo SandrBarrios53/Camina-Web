@@ -1,54 +1,93 @@
 <!DOCTYPE html>
-  <html lang="es">
+<html lang="es">
 
-  <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Camina+</title>
-    <link rel="stylesheet" href="styles.css">
-  </head>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Camina+</title>
+  <link rel="stylesheet" href="style.css">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+</head>
 
-  <body>
+<body>
 
-    <header>
-      <nav class="menu">
-        <ul>
-          <a href="#">Inicio</a>
-          <a href="#">Jugar</a>
-          <a href="#">Contacto</a>
-        </ul>
-      </nav>
-    </header>
+  <header>
+    <nav class="menu">
+      <ul>
+        <a href="Indext.html">Inicio</a>
+        <a href="personajes.html">Personajes</a>
+        <a href="jugar.html">Jugar</a>
+        <a href="contacto.html">Contacto</a>
+      </ul>
+    </nav>
+  </header>
 
-    <h1>Bienvenido a CAMINA+</h1>
 
-    <div id="contenido">
-      <p>Haz clic para recibir un mensaje motivador del juego.</p>
-      <button onclick="mostrarMensaje()">Motívame</button>
-      <div id="mensajeInteractivo"></div>
-    </div>
+  <h1>Bienvenido a CAMINA+</h1>
 
-    <!--Script boton de motivacion-->
-    <script>
-      const mensajes = [
-        "¡Tú puedes seguir avanzando!",
-        "Cada paso cuenta, no te rindas.",
-        "Hoy es un gran día para mejorar.",
-        "¡Vamos, estás haciendo un gran trabajo!"
-      ];
+  <div id="contenido">
+    <p>Haz clic para recibir un mensaje motivador del juego.</p>
+    <button onclick="mostrarMensaje()">Motívame</button>
+    <div id="mensajeInteractivo"></div>
+  </div>
+  <br>
+  <img class="img_logo" src="/img/definicion del concepto y preproduccion.jpg">
 
-      function mostrarMensaje() {
-        const mensaje = mensajes[Math.floor(Math.random() * mensajes.length)];
-        document.getElementById("mensajeInteractivo").textContent = mensaje;
-      }
-    </script>
+  <div class="contenido_texto" style="margin: 30px;" >
+    <p>Un ACV puede ser un desafío difícil de superar. Camina+ es un juego interactivo diseñado 
+      para apoyar a los pacientes en su proceso de recuperación, mediante actividades que estimulan el movimiento del lado afectado usando
+      el mouse. Estas actividades ayudan a mejorar la movilidad y la percepción de reflejos de manera entretenida y
+      motivadora.</p>
+
+    <p>Mecanicas Principales
+      Clics Repetitivos: Las actividades propuestas en esta primer entrega consiste en apoyar
+      la recuperacion de la fuerza en los dedos mediante el clic en diferentes partes de la pantalla</p>
+
+    <p>desarrollado en primera persona, Camina+ tiene como objetivo fortalecer la confianza del
+      paciente al realizar sencillas actividades, mini retos progresivos, apoyandose
+      en el cronometro como aporte a la experiencia inmersiva del paciente</p>
+
+    <p>Feed Back: En esta primer entrega, los sonidos propuestos ayudan al paciente a entender
+      cuando ha realizado de forma correcta la actividad</p>
 
 
     
+    <p></p>
+  </div>
 
 
-    
-  </body>
- 
 
-  </html>
+
+  <!--Scripts de funcionamiento de pagina -->
+  <!--Script boton de motivacion-->
+  <script>
+    const mensajes = [
+      "¡Tú puedes seguir avanzando!",
+      "Cada paso cuenta, no te rindas.",
+      "Hoy es un gran día para mejorar.",
+      "¡Vamos, estás haciendo un gran trabajo!"
+    ];
+
+    function mostrarMensaje() {
+      const mensaje = mensajes[Math.floor(Math.random() * mensajes.length)];
+      document.getElementById("mensajeInteractivo").textContent = mensaje;
+    }
+  </script>
+  <!--Script boton de motivacion-->
+
+
+</body>
+
+<footer>
+  <p>&copy; 2025 Camina+. Todos los derechos reservados.</p>
+  <p>Contacto: <a href="mailto:contacto@camina.com">contacto@camina.com</a></p>
+  <p>
+    Síguenos:
+    <a href="#" target="_blank">Facebook</a> |
+    <a href="#" target="_blank">Instagram</a> |
+    <a href="#" target="_blank">Twitter</a>
+  </p>
+</footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+</html>
